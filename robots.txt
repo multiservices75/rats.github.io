@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://multiservices75.github.io/rats/sitemap.xml

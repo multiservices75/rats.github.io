@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="fr">
+<!--
+  📁 IMAGES REQUISES — crée un dossier "images/" à la racine de ton repo GitHub avec :
+     • images/hero.jpg       (photo principale du hero, format paysage recommandé)
+     • images/gallery-1.jpg  (1re photo galerie, format 4:3 ~1200 px)
+     • images/gallery-2.jpg  (2e photo galerie)
+     • images/gallery-3.jpg  (3e photo galerie)
+  Tant qu'elles ne sont pas ajoutées, des placeholders gris s'affichent.
+-->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dératisation d&#x27;urgence à Paris et Île-de-France</title>
+<meta name="description" content="Dératisation d&#x27;urgence 7j/7 à Paris et région. Méthodes sûres, discrètes, éprouvées. Intervention rapide particuliers et pros." />
+<link rel="canonical" href="https://multiservices75.github.io/rats/" />
+<meta property="og:title" content="Dératisation d&#x27;urgence à Paris et Île-de-France" />
+<meta property="og:description" content="Dératisation d&#x27;urgence 7j/7 à Paris et région. Méthodes sûres, discrètes, éprouvées. Intervention rapide particuliers et pros." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://multiservices75.github.io/rats/" />
+<meta property="og:image" content="https://multiservices75.github.io/rats/images/hero.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="robots" content="index, follow" />
+<meta name="theme-color" content="#12557E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --primary:#12557E; --secondary:#D84F4F;
+    --light:#F8FAFC; --dark:#0E1F2E; --text:#0E1F2E;
+    --on-primary:#F8FAFC; --on-dark:#F8FAFC;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--light);color:var(--text);font-family:'Poppins',system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
+  img{display:block;max-width:100%}
+  a{color:inherit;text-decoration:none}
+  .eyebrow{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 22px;font-weight:700;font-size:14px;border:none;cursor:pointer;transition:opacity .2s}
+  .btn:hover{opacity:.88}
+  .btn-primary{background:var(--primary);color:var(--on-primary)}
+  .btn-ghost{background:transparent;color:var(--text);border:1px solid rgba(15,23,42,.3)}
+  .btn-ghost:hover{background:rgba(0,0,0,.04)}
+  .star{width:16px;height:16px;fill:var(--secondary);color:var(--secondary)}
+
+  header{position:sticky;top:0;z-index:30;background:rgba(248,250,252,.9);backdrop-filter:blur(10px);border-bottom:1px solid rgba(15,23,42,.1)}
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 24px;max-width:1280px;margin:0 auto}
+  .brand{font-weight:800;font-size:18px}
+  .nav-links{display:none;gap:32px}
+  .nav-links a{font-size:14px;color:rgba(15,23,42,.65);transition:opacity .2s}
+  .nav-links a:hover{opacity:.6}
+  @media(min-width:768px){.nav-links{display:flex}}
+  .nav-cta{display:inline-flex;align-items:center;gap:8px;padding:10px 20px;background:var(--primary);color:var(--on-primary);font-weight:600;font-size:14px;transition:opacity .2s}
+  .nav-cta:hover{opacity:.9}
+
+  .hero{overflow:hidden;background:var(--light)}
+  .hero-grid{display:grid;min-height:74vh;max-width:1440px;margin:0 auto}
+  @media(min-width:768px){.hero-grid{grid-template-columns:0.82fr 1.18fr;align-items:stretch}}
+  .hero-copy{display:flex;align-items:center;padding:80px 24px}
+  @media(min-width:640px){.hero-copy{padding:80px 48px}}
+  @media(min-width:1024px){.hero-copy{padding:80px 80px}}
+  .hero-title{margin:20px 0 0;font-size:40px;font-weight:700;line-height:.98;max-width:560px;word-wrap:break-word}
+  @media(min-width:640px){.hero-title{font-size:60px}}
+  @media(min-width:1024px){.hero-title{font-size:72px}}
+  .hero-desc{margin-top:24px;font-size:16px;line-height:1.6;opacity:.8;max-width:520px}
+  @media(min-width:640px){.hero-desc{font-size:18px}}
+  .hero-actions{margin-top:32px;display:flex;flex-wrap:wrap;gap:12px}
+  .hero-rating{margin-top:28px;display:flex;align-items:center;gap:8px;font-size:14px}
+  .hero-image{width:100%;height:100%;min-height:320px;object-fit:cover;background:#e2e8f0}
+
+  .about{background:var(--dark);color:var(--on-dark)}
+  .about-inner{max-width:1152px;margin:0 auto;padding:96px 24px}
+  .about-grid{display:grid;gap:40px}
+  @media(min-width:1024px){.about-grid{grid-template-columns:1fr 1fr;gap:80px}}
+  .about-title{font-size:30px;font-weight:800;margin:0}
+  @media(min-width:640px){.about-title{font-size:36px}}
+  .about-text{max-width:640px}
+  .about-text p{font-size:18px;line-height:1.6;opacity:.7;margin:0 0 20px}
+  .about-list{list-style:none;padding:0;margin:16px 0 0;display:grid;gap:12px}
+  @media(min-width:640px){.about-list{grid-template-columns:1fr 1fr}}
+  .about-list li{display:flex;align-items:center;gap:12px;border-top:1px solid rgba(255,255,255,.15);padding:16px 0;font-size:14px;font-weight:600}
+  .about-list svg{width:20px;height:20px;flex-shrink:0}
+
+  .gallery-inner{max-width:1280px;margin:0 auto;padding:80px 24px}
+  @media(min-width:640px){.gallery-inner{padding:96px 24px}}
+  .gallery-head .eyebrow{color:var(--primary)}
+  .gallery-title{margin-top:12px;font-size:36px;font-weight:700;line-height:1.15}
+  @media(min-width:640px){.gallery-title{font-size:48px}}
+  .gallery-grid{margin-top:40px;column-gap:20px;column-count:1}
+  @media(min-width:768px){.gallery-grid{column-count:2}}
+  @media(min-width:1024px){.gallery-grid{column-count:3}}
+  .gallery-item{margin-bottom:20px;break-inside:avoid;overflow:hidden;background:#e2e8f0}
+  .gallery-item .frame{position:relative;aspect-ratio:4/3;overflow:hidden;background:linear-gradient(135deg,#e2e8f0 0%,#cbd5e1 100%)}
+  .gallery-item img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+
+  .reviews{background:var(--dark);color:var(--on-dark)}
+  .reviews-inner{padding:80px 0}
+  @media(min-width:640px){.reviews-inner{padding:96px 0}}
+  .reviews-head{max-width:1280px;margin:0 auto;padding:0 24px}
+  .reviews-head .eyebrow{color:var(--secondary)}
+  .reviews-titles{margin-top:16px;display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:16px 40px}
+  .reviews-titles h2{margin:0;font-size:30px;font-weight:700}
+  @media(min-width:640px){.reviews-titles h2{font-size:36px}}
+  .rating-inline{display:flex;align-items:center;gap:12px}
+  .rating-inline .num{font-size:30px;font-weight:700}
+  .rating-inline .stars{display:flex;gap:2px}
+  .rating-inline .count{font-size:14px;opacity:.7}
+  .reviews-rail{margin-top:40px;padding-left:24px;overflow-x:auto;-webkit-overflow-scrolling:touch}
+  @media(min-width:1280px){.reviews-rail{padding-left:calc((100vw - 1280px)/2 + 24px)}}
+  .reviews-track{display:flex;gap:20px;padding-bottom:16px}
+  .review-card{display:flex;flex-direction:column;height:240px;width:86vw;flex-shrink:0;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.06);padding:24px;border-radius:8px}
+  @media(min-width:640px){.review-card{width:368px}}
+  .review-stars{display:flex;gap:2px}
+  .review-text{margin:20px 0 0;font-size:15px;line-height:1.6;white-space:pre-line;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
+  .review-name{margin-top:auto;padding-top:24px;font-size:14px;font-weight:600}
+
+  .contact-inner{max-width:1280px;margin:0 auto;padding:80px 24px;display:grid;gap:48px}
+  @media(min-width:640px){.contact-inner{padding:96px 24px}}
+  @media(min-width:768px){.contact-inner{grid-template-columns:1fr 1fr}}
+  .contact-head .eyebrow{color:var(--primary)}
+  .contact-head h2{margin-top:12px;font-size:36px;font-weight:700;line-height:1.15}
+  @media(min-width:640px){.contact-head h2{font-size:48px}}
+  .contact-head p{margin-top:16px;font-size:16px;opacity:.7;max-width:480px}
+  .info-list{margin-top:32px;display:grid;gap:20px}
+  .info-item{display:flex;align-items:flex-start;gap:16px}
+  .info-icon{display:grid;place-items:center;width:40px;height:40px;flex-shrink:0;background:var(--primary);color:var(--on-primary)}
+  .info-item .label{font-size:11px;text-transform:uppercase;letter-spacing:.08em;opacity:.6}
+  .info-item .val{font-weight:700}
+  .info-item .val a:hover{text-decoration:underline}
+  .info-item .sub{font-size:14px;opacity:.7}
+
+  form.card{border:1px solid rgba(15,23,42,.1);background:#fff;padding:24px}
+  @media(min-width:640px){form.card{padding:32px}}
+  .form-row{display:grid;gap:16px}
+  @media(min-width:640px){.form-row.two{grid-template-columns:1fr 1fr}}
+  .field{display:block;margin-bottom:16px}
+  .field label{display:block;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px}
+  .field input,.field select,.field textarea{width:100%;border:1px solid rgba(15,23,42,.15);background:#fff;padding:10px 12px;font-size:14px;font-family:inherit;outline:none;transition:border-color .15s}
+  .field input:focus,.field select:focus,.field textarea:focus{border-color:var(--primary)}
+  .field textarea{resize:vertical;min-height:110px}
+  .hp{position:absolute;left:-9999px;height:0;overflow:hidden}
+  .alert{padding:10px 12px;font-size:14px;margin-bottom:12px;display:none}
+  .alert.ok{background:#ECFDF5;color:#065F46;border:1px solid #A7F3D0}
+  .alert.ko{background:#FEF2F2;color:#991B1B;border:1px solid #FECACA}
+
+  footer{background:var(--dark);color:rgba(248,250,252,.7);border-top:1px solid rgba(255,255,255,.1)}
+  .footer-inner{max-width:1280px;margin:0 auto;padding:40px 24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;font-size:14px}
+  .footer-inner a:hover{color:#fff}
+
+  .wa-float{position:fixed;right:20px;bottom:20px;z-index:50;display:inline-flex;align-items:center;gap:10px;background:#25D366;color:#fff;padding:14px 18px;border-radius:999px;font-weight:700;font-size:15px;box-shadow:0 10px 30px rgba(37,211,102,.4);transition:transform .2s ease,box-shadow .2s ease}
+  .wa-float:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(37,211,102,.5)}
+  .wa-float svg{width:22px;height:22px}
+  .wa-float .wa-label{display:none}
+  @media(min-width:640px){.wa-float .wa-label{display:inline}}
+  .wa-float::before{content:"";position:absolute;inset:-6px;border-radius:999px;background:#25D366;opacity:.35;animation:wa-pulse 2s ease-out infinite;z-index:-1}
+  @keyframes wa-pulse{0%{transform:scale(1);opacity:.5}100%{transform:scale(1.35);opacity:0}}
+
+  @media(max-width:767px){.hero-grid > img{order:-1;min-height:280px}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="brand">Souris &amp; Rats · Dératisation</div>
+    <nav class="nav-links">
+      <a href="#a-propos">À propos</a>
+      <a href="#realisations">Galerie</a>
+      <a href="#avis">Avis</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="tel:+33184165254" aria-label="Appeler"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>01 84 16 52 54</a>
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <div>
+        <p class="eyebrow" style="color:var(--text)">DÉRATISATION D&#x27;URGENCE À PARIS ET SA RÉGION</p>
+        <h1 class="hero-title">Dératisation d&#x27;urgence — souris et rats</h1>
+        <p class="hero-desc">Intervention d&#x27;urgence 7j/7 pour votre domicile, entreprise ou local commercial avec des méthodes sûres, discrètes et éprouvées.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="tel:+33184165254"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>Nous contacter</a>
+          <a class="btn btn-ghost" href="#contact"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>Nous trouver</a>
+        </div>
+        <p class="hero-rating"><svg class="star" viewBox="0 0 24 24"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg><strong>5,0</strong><span style="opacity:.7">sur Google · 1 avis</span></p>
+      </div>
+    </div>
+    <img class="hero-image" src="images/hero.jpg" alt="Dératisation d&#x27;urgence — souris et rats" />
+  </div>
+</section>
+
+<section id="a-propos" class="about">
+  <div class="about-inner">
+    <div class="about-grid">
+      <h2 class="about-title">Notre expertise au service de votre tranquillité</h2>
+      <div class="about-text">
+        <p>Spécialiste de la dératisation d&#x27;urgence à Paris et sa région, nous mobilisons des experts certifiés pour traiter efficacement toutes les situations d&#x27;infestation. Nous allions réactivité 7j/7, techniques éprouvées et discrétion absolue pour assainir durablement vos environnements personnels et professionnels.</p>
+<p>RATZKILL — Dératisation d&#x27;Urgence à Paris. Intervention sur Paris et sa région, Île-de-France.</p>
+        <ul class="about-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg><span>Intervention d&#x27;urgence disponible 7j/7 à Paris</span></li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg><span>Experts certifiés et méthodes d&#x27;éradication sûres</span></li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg><span>Protection adaptée aux particuliers et professionnels</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="realisations" style="background:var(--light)">
+  <div class="gallery-inner">
+    <header class="gallery-head">
+      <p class="eyebrow">Galerie</p>
+      <h2 class="gallery-title">Découvrez nos réalisations</h2>
+    </header>
+    <div class="gallery-grid">
+      <article class="gallery-item"><div class="frame"><img src="images/gallery-1.jpg" alt="Réalisation 1" loading="lazy" /></div></article>
+<article class="gallery-item"><div class="frame"><img src="images/gallery-2.jpg" alt="Réalisation 2" loading="lazy" /></div></article>
+<article class="gallery-item"><div class="frame"><img src="images/gallery-3.jpg" alt="Réalisation 3" loading="lazy" /></div></article>
+    </div>
+  </div>
+</section>
+
+<section id="avis" class="reviews">
+  <div class="reviews-inner">
+    <div class="reviews-head">
+      <p class="eyebrow">Avis clients</p>
+      <div class="reviews-titles">
+        <h2>Ce que disent nos clients</h2>
+        <div class="rating-inline">
+          <span class="num">5,0</span>
+          <div class="stars" aria-label="5 étoiles sur 5"><svg class="star" viewBox="0 0 24 24"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg><svg class="star" viewBox="0 0 24 24"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg><svg class="star" viewBox="0 0 24 24"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg><svg class="star" viewBox="0 0 24 24"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg><svg class="star" viewBox="0 0 24 24"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg></div>
+          <span class="count">· 1 avis Google</span>
+        </div>
+      </div>
+    </div>
+    <div class="reviews-rail"><div class="reviews-track" id="reviews-track"></div></div>
+  </div>
+</section>
+
+<section id="contact" style="background:var(--light)">
+  <div class="contact-inner">
+    <div>
+      <div class="contact-head">
+        <p class="eyebrow">Contact</p>
+        <h2>Une infestation ?</h2>
+        <p>Contactez-nous par téléphone ou remplissez le formulaire, nous intervenons dans les meilleurs délais — urgences prises en priorité.</p>
+      </div>
+      <div class="info-list">
+        <div class="info-item">
+          <div class="info-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg></div>
+          <div><div class="label">Téléphone</div><div class="val"><a href="tel:+33184165254">01 84 16 52 54</a></div></div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div><div class="label">Zone</div><div class="val">Paris et Île-de-France</div><div class="sub">Lun–Dim · Disponibilité étendue</div></div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon" style="background:#25D366;color:#fff"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.966-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.83 9.83 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.82 11.82 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.9 11.9 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.82 11.82 0 0 0-3.48-8.413Z"/></svg></div>
+          <div><div class="label">WhatsApp</div><div class="val"><a href="https://wa.me/33184165254?text=Bonjour%2C%20j%27ai%20besoin%20d%27une%20d%C3%A9ratisation%20d%27urgence" target="_blank" rel="noopener">Écrire sur WhatsApp</a></div><div class="sub">Réponse rapide, envoi de photos possible</div></div>
+        </div>
+      </div>
+    </div>
+
+    <form class="card" id="contact-form" novalidate>
+      <input type="hidden" name="access_key" value="582a59ba-3cd7-4dea-8105-9d85e1b0c448" />
+      <input type="hidden" name="subject" value="Nouvelle demande - Dératisation Souris &amp; Rats" />
+      <input type="hidden" name="from_name" value="Site Souris &amp; Rats · Dératisation" />
+      <div class="hp"><label>Ne pas remplir</label><input type="checkbox" name="botcheck" /></div>
+
+      <div id="alert-ok" class="alert ok">Merci, votre demande a bien été envoyée. On vous rappelle très vite.</div>
+      <div id="alert-ko" class="alert ko">Impossible d'envoyer votre message. Appelez-nous au 01 84 16 52 54.</div>
+
+      <div class="form-row two">
+        <div class="field"><label>Nom *</label><input required name="name" minlength="2" maxlength="120" /></div>
+        <div class="field"><label>Téléphone *</label><input required name="phone" type="tel" minlength="6" maxlength="30" /></div>
+      </div>
+      <div class="form-row two">
+        <div class="field"><label>Email</label><input name="email" type="email" /></div>
+        <div class="field"><label>Type de demande *</label>
+          <select required name="demande"><option value="">Choisir…</option>
+          <option>Souris</option>
+<option>Rats</option>
+<option>Souris et rats</option>
+<option>Autre rongeur</option>
+          </select>
+        </div>
+      </div>
+      <div class="field"><label>Adresse d'intervention</label><input name="adresse" maxlength="250" /></div>
+      <div class="field"><label>Votre message *</label><textarea required name="message" minlength="5" maxlength="2000" placeholder="Décrivez votre situation, l'urgence, l'accès…"></textarea></div>
+
+      <button type="submit" class="btn btn-primary" id="submit-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/><path d="m21.854 2.147-10.94 10.939"/></svg>Envoyer ma demande</button>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<a class="wa-float" href="https://wa.me/33184165254?text=Bonjour%2C%20j%27ai%20besoin%20d%27une%20d%C3%A9ratisation%20d%27urgence" target="_blank" rel="noopener" aria-label="Contacter sur WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.966-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.83 9.83 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.82 11.82 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.9 11.9 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.82 11.82 0 0 0-3.48-8.413Z"/></svg><span class="wa-label">WhatsApp</span>
+</a>
+
+<footer>
+  <div class="footer-inner">
+    <div>© <span id="year"></span> Souris &amp; Rats · Dératisation. Tous droits réservés.</div>
+    <div style="display:flex;gap:20px">
+      <a href="tel:+33184165254">01 84 16 52 54</a>
+      <a href="#a-propos">À propos</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  var REVIEWS = [{"n": "Arthur Pflug", "t": "Dératiseur vraiment top !\nLe rendez-vous s'est effectué très rapidement et simplement.\nAu bout de 2 passages le problème était réglé…\nJe recommande vivement."}];
+  var STAR = '<svg class="star" viewBox="0 0 24 24"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>';
+  var track = document.getElementById('reviews-track');
+  REVIEWS.forEach(function(r){
+    var card = document.createElement('article'); card.className='review-card';
+    card.innerHTML = '<div class="review-stars">'+STAR.repeat(5)+'</div>'+
+                     '<p class="review-text">'+r.t.replace(/</g,'&lt;')+'</p>'+
+                     '<p class="review-name">'+r.n+'</p>';
+    track.appendChild(card);
+  });
+
+  var form = document.getElementById('contact-form');
+  var btn  = document.getElementById('submit-btn');
+  var okEl = document.getElementById('alert-ok');
+  var koEl = document.getElementById('alert-ko');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    okEl.style.display='none'; koEl.style.display='none';
+    if(!form.checkValidity()){ form.reportValidity(); return; }
+    btn.disabled=true; btn.textContent='Envoi…';
+    var fd = new FormData(form);
+    fetch('https://api.web3forms.com/submit', { method:'POST', body:fd })
+      .then(function(r){ return r.json(); })
+      .then(function(data){
+        if(data && data.success){ okEl.style.display='block'; form.reset(); }
+        else { koEl.style.display='block'; }
+      })
+      .catch(function(){ koEl.style.display='block'; })
+      .finally(function(){ btn.disabled=false; btn.textContent=''; btn.appendChild(document.createTextNode('Envoyer ma demande')); });
+  });
+</script>
+</body>
+</html>
